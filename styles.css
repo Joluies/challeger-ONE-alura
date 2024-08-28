@@ -1,0 +1,385 @@
+
+:root{
+    --color-verde1: #f7feef;
+    --color-verde2: #cbddb5;
+    --color-verde3: #a8ca7e;
+    --color-verde4: #97b770;
+    --color-verde5: #608334;
+    --color-verdelogo: #3e9786;
+    --colorSombra:#539B8E;
+    --colorSombra2:#023f34;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    background: var(--color-verde1);
+}
+::selection{
+    background: var(--color-verde2);
+    color: var(--color-verdelogo);
+}
+body{
+    height: 100vh;
+}
+header{
+    position: absolute;
+    margin: 1.5rem 0 0 1.5rem;
+}
+header .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 7rem;
+    height: 3rem;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+/*seccion1*/
+.seccion1{
+    width: 60%;
+    margin:7rem 0 0 8rem;
+    background: transparent;
+}
+.text-area-uno{
+    width: 34.25rem;
+    height: 280px;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--color-verdelogo);
+    line-height: 3rem;
+    outline: none;
+    border: 0.1rem solid var(--color-verde1);
+    border-radius: 1.6rem;
+    resize: none;
+}
+.text-area-uno::placeholder, :focus{
+    color: var(--color-verde4);
+    caret-color: var(--colorSombra2);
+}
+.alerta-mensaje{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 14.5rem;
+    padding: 0;
+    gap: 0.3rem;
+    width: 100%;
+    font-size: 1.1rem;
+    color: var(--color-verde5);
+}
+.botones{
+margin-top: 0.5rem;
+}
+.encriptar{
+width: 35%;
+height: 3.9rem;
+border: 0.15rem solid var(--colorSombra);
+border-radius: 1.7rem;
+font-size: 1.8rem;
+font-weight: 400;
+color: var(--color-verde1);
+background: var(--color-verde4);
+box-shadow: 0.1rem 0.4rem 0.6rem -0.1rem var(--colorSombra);
+}
+.encriptar:active{
+    box-shadow: inset 0.2rem 0.2rem 0.4rem var(--colorSombra2),
+    inset -0.3rem -0.4rem 0.8rem var(--colorSombra);
+    color: var(--color-verdelogo);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.desencriptar{
+width: 35%;
+height: 3.9rem;
+border: 0.15rem solid var(--colorSombra);
+border-radius: 1.7rem;
+font-size: 1.8rem;
+font-weight: 400;
+color: var(--color-verde1);
+background: var(--color-verde3);
+box-shadow: 0.1rem 0.4rem 0.6rem -0.1rem var(--colorSombra);
+}
+.desencriptar:active{
+    box-shadow: inset 0.2rem 0.2rem 0.4rem var(--colorSombra2),
+    inset -0.3rem -0.4rem 0.8rem var(--colorSombra);
+    color: var(--color-verdelogo);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+/*seccion2*/
+.seccion2{
+    width: 27%;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 2.1rem;
+    margin: 0.rem 0 0 5.5rem;
+    background: var(--color-verde2);
+    border-radius: 2rem;
+    border: 0.1rem solid var(--color-verde3);
+    box-shadow: 0.8rem 0.2rem 0.6rem -0.6rem var(--colorSombra2);
+}
+.resultados{
+    margin: auto;
+    margin-top: 30%;
+    background: var(--color-verde2);
+    text-align: center;
+    justify-content: center;
+}
+.muñeco{
+    width: 14rem;
+    height: 22rem;
+    background: var(--color-verde2);
+}
+.text-alert-resultado1{
+    background: var(--color-verde2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-verde5);
+}
+.text-alert-resultado2{
+    background: var(--color-verde2);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-verde5);
+    margin-top: 0.5rem;
+}
+.resultados2{
+    background: var(--color-verde2);
+    text-align: center;
+    justify-content: center;
+}
+.text-area-dos{
+    display: flex;
+    width: 15.25rem;
+    height: 5rem;
+    font-weight: 500;
+    font-size: 1.9rem;
+    line-height: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border:none;
+    background: var(--color-verde2);
+    border-radius: 1.6rem;
+    resize: none; 
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.btn-copiar{
+    width: 22%;
+    height: 3.7rem;
+    border: 0.15rem solid var(--colorSombra);
+    border-radius: 1.7rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--color-verde1);
+    background: var(--color-verde4);
+    box-shadow: 0.1rem 0.1rem 0.6rem -0.1rem var(--colorSombra2);
+    margin-bottom: 1.5rem;
+    margin-top: 40rem;
+    position: absolute;
+}
+.btn-copiar:active{
+    box-shadow: inset 0.2rem 0.2rem 0.4rem var(--colorSombra2),
+    inset -0.3rem -0.4rem 0.8rem var(--colorSombra);
+    color: var(--color-verdelogo);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+footer{
+margin-top: 1rem;
+padding: 0.8rem;
+text-align: center;
+height: 1.5rem;
+font-size: 1.5rem ;
+font-weight: 500;
+color: var(--color-verde5)
+}
+.social-media{
+    margin-top: 0.5rem;
+}
+.social-media a{
+    color: var(--color-verde5);
+    text-decoration: none;
+    margin-right: 0.6rem;
+}
+.social-media i{
+    font-size: 1.9rem;
+}
+.social-media i:hover{
+color: var(--color-verdelogo);
+transform: scale(2);
+}
+
+#texto-encriptado{
+    display: none;
+}
+#btn-copiar{
+    display:none
+}
+/*-----------responsive content--------------------*/
+    
+
+/* Teléfonos Móviles Pequeños (Vertical) */
+@media only screen and (max-width: 430px) and (orientation: portrait) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion1 {
+        width: 100%;
+        margin: 5rem 1rem 0 1rem;
+    }
+    .text-area-uno{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .text-area-uno::placeholder{
+        font-size: 2rem;
+        color: var(--color-verde5);
+    
+    }
+
+    .seccion2 {
+        width: 100%;
+        height: 80%;
+        margin: 2rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .muñeco{
+        display: none;
+    }
+
+    .text-area-uno {
+        width: 100%;
+        height: 70%;
+        font-size: 2.5rem;
+    }
+
+    .btn-copiar{
+        max-width: 75%;
+        margin: 0;
+        margin-top: 10rem;
+    } 
+    .encriptar, .desencriptar {
+        width: 80%;
+    }
+
+    .alerta-mensaje {
+        margin-top: 10rem;
+        font-size: 1rem;
+    }
+}
+
+
+/* Teléfonos Móviles Grandes (Vertical) */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    .seccion1 {
+        width: 80%;
+        margin: 6rem 2rem 0 2rem;
+    }
+
+    .seccion2 {
+        width: 80%;
+        margin: 2rem auto 0 auto;
+    }
+
+
+    .btn-copiar, .encriptar, .desencriptar {
+        width: 100%;
+    }
+
+    .alerta-mensaje {
+        margin-top: 12rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Tabletas (Vertical) */
+@media only screen and (min-width: 600px) and (max-width: 930px) and (orientation: portrait) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion1 {
+        width: 100%;
+        justify-content: center;
+    }
+      .text-area-uno {
+        width: 100%;
+        font-size: 2rem;
+    }
+    .text-area-uno::placeholder{
+        font-size: 3.5rem;
+        color: var(--color-verde5);
+    }
+
+    .seccion2 {
+        width: 90%;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    .muñeco{
+        display: none;
+    }
+
+    .btn-copiar{
+        width: 80%;
+        height: 5rem;
+        font-size: 2rem;
+        margin: 0;
+        margin-top: 26rem;
+    }
+     .encriptar, .desencriptar {
+        width: 80%;
+        height: 5rem;
+        font-size: 2rem;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .alerta-mensaje {
+        margin-top: 15rem;
+        font-size: 1.3rem;
+    }
+    .resultados{
+        margin: 0;
+        padding: 0;
+        margin-top: 1rem;
+    }
+    .text-alert-resultado1{
+        font-size: 2.8rem;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    .text-alert-resultado2{
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 0;
+    }
+    footer{
+        font-size: 2.2rem;
+        margin: 0;
+        padding: 0;
+    }
+    .social-media i{
+        font-size: 3.5rem;
+    }
+}

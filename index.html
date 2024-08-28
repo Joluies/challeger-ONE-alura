@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/encryption.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title> Js Encriptador</title>
+</head>
+<body> 
+    <header>
+        <img src="./img/alura-logo.svg" alt="Logo" class="logo">
+    </header>
+    <main>
+        <section class="seccion1">
+            <textarea class="text-area-uno" placeholder="Ingrese el texto aqui" id="encriptador"></textarea>
+            <div class="alerta-mensaje">
+                <i class="fa-solid fa-circle-exclamation fa-sm" style="color: #000000;"></i>
+                <p>Solo letras minuscúlas y sin acento</p>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="encrypt()">Encriptar</button>
+                <button class="desencriptar" onclick="decrypt()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="resultados" id="no-message">
+                <img src="./img/mune.svg" alt="muñeco" class="muñeco">
+                <p class="text-alert-resultado1">Ningún mensaje fue <br>encontrado</p>
+                <p class="text-alert-resultado2">Ingrese el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="resultados2">
+                <textarea class="text-area-dos" id="texto-encriptado"></textarea>
+            </div>
+            <button class="btn-copiar" id="btn-copiar" onclick="copy()">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="copy-text">Copyright © 2024 JS Text Encryptor. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="" target="_blank"> <i class="fa-brands fa-linkedin-in"></i> </a>
+
+            <a href=""> <i class="fa-brands fa-github-alt"></i> </a>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/ede8c06b05.js" crossorigin="anonymous"></script>
+</html>
